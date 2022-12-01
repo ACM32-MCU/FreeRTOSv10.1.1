@@ -1,0 +1,26 @@
+--cpu=Cortex-M33
+".\objects\system_acm32g103.o"
+"..\Drivers\Device\system_accelerate.lib"
+".\objects\startup_acm32g103.o"
+".\objects\hal.o"
+".\objects\hal_uart.o"
+".\objects\hal_cortex.o"
+".\objects\hal_dma.o"
+".\objects\hal_rcc.o"
+".\objects\hal_gpio.o"
+".\objects\hal_exti.o"
+".\objects\main.o"
+".\objects\semtest.o"
+".\objects\integer.o"
+".\objects\pollq.o"
+".\objects\blockq.o"
+".\objects\acm32g103_it.o"
+".\objects\tasks.o"
+".\objects\list.o"
+".\objects\queue.o"
+".\objects\heap_2.o"
+".\objects\port.o"
+--library_type=microlib --strict --scatter ".\Objects\ACM32G103.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ACM32G103.map" -o .\Objects\ACM32G103.axf

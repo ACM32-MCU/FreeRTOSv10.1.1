@@ -1,7 +1,12 @@
 ./objects/main.o: ..\main.c ..\Drivers\HAL_Driver\Inc\hal.h \
-  ..\acm32g103_hal_conf.h ..\Drivers\Device\acm32g103.h \
-  ..\Drivers\CMSIS\core_cm33.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\acm32g103_hal_conf.h ..\..\..\Source\include\FreeRTOS.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h ..\FreeRTOSConfig.h \
+  ..\..\..\Source\include\projdefs.h ..\..\..\Source\include\portable.h \
+  ..\..\..\Source\include\deprecated_definitions.h \
+  ..\..\..\Source\portable\GCC\ARM_CM4F\portmacro.h \
+  ..\..\..\Source\include\mpu_wrappers.h ..\FreeRTOSConfig.h \
+  ..\Drivers\Device\acm32g103.h ..\Drivers\CMSIS\core_cm33.h \
   ..\Drivers\CMSIS\cmsis_version.h ..\Drivers\CMSIS\cmsis_compiler.h \
   ..\Drivers\CMSIS\cmsis_armclang.h ..\Drivers\CMSIS\mpu_armv8.h \
   ..\Drivers\Device\system_acm32g103.h \
@@ -23,13 +28,7 @@
   ..\Drivers\HAL_Driver\Inc\hal_rcc.h \
   ..\Drivers\HAL_Driver\Inc\hal_rtc.h \
   ..\Drivers\HAL_Driver\Inc\hal_pmu.h \
-  ..\Drivers\HAL_Driver\Inc\hal_eflash.h \
-  ..\..\..\Source\include\FreeRTOS.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h ..\FreeRTOSConfig.h \
-  ..\..\..\Source\include\projdefs.h ..\..\..\Source\include\portable.h \
-  ..\..\..\Source\include\deprecated_definitions.h \
-  ..\..\..\Source\portable\GCC\ARM_CM4F\portmacro.h \
-  ..\..\..\Source\include\mpu_wrappers.h ..\..\..\Source\include\task.h \
+  ..\Drivers\HAL_Driver\Inc\hal_eflash.h ..\..\..\Source\include\task.h \
   ..\..\..\Source\include\list.h ..\..\..\Source\include\queue.h \
   ..\..\..\Source\include\task.h ..\..\..\Source\include\semphr.h \
   ..\..\..\Source\include\queue.h ..\..\Common\include\integer.h \

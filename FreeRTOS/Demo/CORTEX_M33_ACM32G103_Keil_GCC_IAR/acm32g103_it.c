@@ -7,11 +7,12 @@
 
 #include "hal.h"
 
+extern void xPortSysTickHandler(void);
 void SVC_Handler(void)
 {
     __asm volatile
     ( 
-    "   B vPortSVCHandler"
+    "   B vPortSVCHandler\n"
     );
 }
 
@@ -19,19 +20,12 @@ void PendSV_Handler(void)
 {
     __asm volatile
     ( 
-    "   B xPortPendSVHandler"
+    "   B xPortPendSVHandler\n"
     );
 }
 
 void SysTick_Handler(void)
 {
-    __asm volatile
-    ( 
-    "   B xPortSysTickHandler"
-    );
-}
-
-HAL_StatusTypeDef HAL_InitTick(uint32_t intPrio, uint32_t msPeriod)
-{
-    return HAL_OK;
+    xPortSysTickHandler();
+    HAL_IncTick();
 }

@@ -9,6 +9,8 @@
 #ifndef __ACM32G103_HAL_CONF_H
 #define __ACM32G103_HAL_CONF_H
 
+#include "FreeRTOS.h"
+#include "FreeRTOSConfig.h"
 #include "acm32g103.h"
 #include "hal_def.h"
 #include "hal.h"
@@ -47,7 +49,7 @@
 /******* SysTick ms period set ,1ms or 10ms **********************************/
 #define TICK_PERIOD_1MS             (1U)
 #define TICK_PERIOD_10MS            (10U)
-#define TICK_PERIOD_MS              (TICK_PERIOD_1MS)  
+#define TICK_PERIOD_MS              (1000/configTICK_RATE_HZ)  
 
 
 /******* instruction and data accelerate enable ******************************/

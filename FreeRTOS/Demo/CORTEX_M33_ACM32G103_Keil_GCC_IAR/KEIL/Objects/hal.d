@@ -1,7 +1,13 @@
 ./objects/hal.o: ..\Drivers\HAL_Driver\Src\hal.c \
   ..\Drivers\HAL_Driver\Inc\hal.h ..\acm32g103_hal_conf.h \
+  ..\..\..\Source\include\FreeRTOS.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h ..\FreeRTOSConfig.h \
+  ..\..\..\Source\include\projdefs.h ..\..\..\Source\include\portable.h \
+  ..\..\..\Source\include\deprecated_definitions.h \
+  ..\..\..\Source\portable\GCC\ARM_CM4F\portmacro.h \
+  ..\..\..\Source\include\mpu_wrappers.h ..\FreeRTOSConfig.h \
   ..\Drivers\Device\acm32g103.h ..\Drivers\CMSIS\core_cm33.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\Drivers\CMSIS\cmsis_version.h ..\Drivers\CMSIS\cmsis_compiler.h \
   ..\Drivers\CMSIS\cmsis_armclang.h ..\Drivers\CMSIS\mpu_armv8.h \
   ..\Drivers\Device\system_acm32g103.h \
